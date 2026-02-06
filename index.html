@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>推し活ToDoリスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 設定画面 -->
+<div id="settingsPage">
+  <h2>設定</h2>
+  <label>キャラクター画像を選択：
+    <input type="file" id="charImageInput" accept="image/*">
+  </label>
+  <button id="toDoPageBtn">ToDoリストへ</button>
+</div>
+
+<!-- ToDoリスト画面 -->
+<div id="toDoPage" style="display:none;">
+  <h1>推し活ToDoリスト</h1>
+  <input type="text" id="taskInput" placeholder="タスクを入力">
+  <button id="addTaskBtn">追加</button>
+  <ul id="taskList"></ul>
+  <button id="backToSettingsBtn">設定画面へ戻る</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
